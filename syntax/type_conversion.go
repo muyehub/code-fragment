@@ -19,8 +19,8 @@ func AssertTypeToInt32(val interface{}) int32 {
 	case float64:
 		return int32(val.(float64))
 	case string:
-		uid_temp, _ := strconv.Atoi(val.(string))
-		return int32(uid_temp)
+		uidTemp, _ := strconv.Atoi(val.(string))
+		return int32(uidTemp)
 	default:
 		return 0
 	}
